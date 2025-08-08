@@ -825,7 +825,6 @@
             if (!generatedMusic) return;
             
             // Create a simple audio data representation
-<<<<<<< HEAD
             const audioData = {
                 metadata: generatedMusic.metadata,
                 chords: generatedMusic.chords,
@@ -906,33 +905,3 @@
     </script>
 </body>
 </html>
-<script>
-  async function sendRequest() {
-    const genre = document.getElementById("genre").value;
-    const mood = document.getElementById("mood").value;
-    const tempo = parseInt(document.getElementById("tempo").value);
-
-    const response = await fetch("http://127.0.0.1:8000/compose", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ genre, mood, tempo })
-    });
-
-    const data = await response.json();
-    document.getElementById("result").innerText = data.message;
-  }
-</script>
-<body>
-  <h1>AI Music Composer</h1>
-  <label>Genre: <input type="text" id="genre" value="classical"></label><br>
-  <label>Mood: <input type="text" id="mood" value="happy"></label><br>
-  <label>Tempo: <input type="number" id="tempo" value="120"></label><br>
-  <button onclick="sendRequest()">Compose</button>
-
-  <p id="result"></p>
-</body>
-
-            const audioData = {
->>>>>>> deed5f4ef2e9571dcc2a7a6fd0bcb21cdc297718

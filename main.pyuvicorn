@@ -1,1 +1,5 @@
+<<<<<<< HEAD
   main:app --reloaduvicorn main:app --reload
+=======
+  main:app --reloaduvicorn main:app --reload
+>>>>>>> deed5f4ef2e9571dcc2a7a6fd0bcb21cdc297718
